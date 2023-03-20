@@ -8,6 +8,7 @@
     "watch": "webpack --watch",
     "build": "webpack",
     "format": "npx prettier --write .",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

@@ -1,3 +1,4 @@
-console.log('MORE');
-console.log('Even more');
-console.log('and again');
+import './style.css';
+import validationFunction from './validation';
+
+validationFunction();

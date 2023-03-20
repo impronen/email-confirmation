@@ -4,9 +4,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+    <title>Email form</title>
   </head>
   <body>
-    <div><p>YEAH</p></div>
+    <header><h1>this is an email form</h1></header>
+    <main>
+      <form action="" method="post">
+        <fieldset>
+          <label for="first_name">First Name:</label>
+          <input
+            type="text"
+            id="first_name"
+            name="first_name"
+            placeholder="Bob..."
+            minlength="3"
+          />
+          <label for="last_name"
+            >Last Name:
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              placeholder="Dylan..."
+              minlength="3"
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="user_email"
+            >Email Address:
+            <input
+              type="email"
+              id="user_email"
+              name="email"
+              placeholder="you@example.com"
+            />
+          </label>
+          <label for="user_email"
+            >Confirm Email Address:
+            <input
+              type="email"
+              id="user_email_confirmation"
+              name="email"
+              placeholder="you@example.com"
+            />
+            <span id="emailError" aria-live="polite"></span>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="country">Country:</label>
+          <input
+            type="text"
+            id="country"
+            name="country"
+            placeholder="Finland"
+          />
+          <label for="zip_code"
+            >Zip Code:
+            <input
+              type="text"
+              id="zip_code"
+              name="zip_code"
+              placeholder="50100"
+              minlength="5"
+            />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="user_password">Password:</label>
+          <input type="password" id="user_password" name="password" />
+          <label for="user_password"
+            >Confirm password:
+            <input
+              type="password"
+              id="user_password_confirmation"
+              name="password_confirmation"
+            />
+            <span id="pwdError" aria-live="polite"></span>
+          </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer></footer>
   </body>
 </html>
